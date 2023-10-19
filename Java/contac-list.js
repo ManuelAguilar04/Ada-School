@@ -22,7 +22,7 @@ function agregarContacto(nuevoContacto){
 }
 
 function contactoBorrar(borrarContacto){
-    let nuevalista = listaContacto.filter((contacto)=>contacto.id !== contactoBorrar);
+    let nuevalista = listaContacto.filter((contacto)=>contacto.id !== borrarContacto);
 }
 
 function imprimirContacto(){
@@ -36,3 +36,8 @@ let nuevoContacto = {
     celular: "88888888",
     ubicacion: {ciudad: "San Pedro Sula",}
 }
+
+agregarContacto(nuevoContacto);
+imprimirContacto();
+contactoBorrar(1);
+imprimirContacto();
